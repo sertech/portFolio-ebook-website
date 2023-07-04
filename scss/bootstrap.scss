@@ -1,0 +1,59 @@
+// Font - this variable setup the entire website font
+$font-family-sans-serif: "Open Sans", sans-serif;
+
+// Colors
+$primary: #c167ef;
+$secondary: #10bcee;
+$dark: #2b3041;
+$light: #f3f6f9;
+
+// navbar
+$navbar-padding-y: 1rem;
+$navbar-dark-color: #fff;
+$navbar-dark-hover-color: $secondary;
+
+// buttons
+$button-radius: 50px; //this a custom new variable to set all bs _variables at once
+$button-padding-x: 30px;
+$button-padding-y: 10px;
+
+$btn-border-radius: $button-radius;
+$btn-border-radius-lg: $button-radius;
+$btn-border-radius-sm: $button-radius;
+
+$btn-padding-x: $button-padding-x;
+$btn-padding-x-sm: $button-padding-x;
+$btn-padding-x-lg: $button-padding-x;
+$btn-padding-y: $button-padding-y;
+$btn-padding-y-sm: $button-padding-y;
+$btn-padding-y-lg: $button-padding-y;
+
+$navbar-toggler-border-radius: 5px;
+
+// spacers
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: $spacer * 0.25,
+    2: $spacer * 0.5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    // up to here is the bs default
+    // from 6 to 8 we are adding more values which will be compiled
+    6: $spacer * 6,
+    7: $spacer * 8,
+    8: $spacer * 12,
+) !default;
+
+// line height
+$line-height-base: 1.7;
+
+// heading space
+$headings-margin-bottom: $spacer * 1;
+
+// enable negative margins
+$enable-negative-margins: true;
+
+// this import should at the bottom always
+@import "../node_modules/bootstrap/scss/bootstrap";
